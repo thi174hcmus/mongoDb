@@ -1,0 +1,85 @@
+2019-03-23T18:09:23.123+0700 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2019-03-23T18:09:23.146+0700 I CONTROL  [initandlisten] MongoDB starting : pid=10828 port=27017 dbpath=E:\mongoDb\data 64-bit host=ASUS
+2019-03-23T18:09:23.146+0700 I CONTROL  [initandlisten] targetMinOS: Windows 7/Windows Server 2008 R2
+2019-03-23T18:09:23.147+0700 I CONTROL  [initandlisten] db version v4.0.6
+2019-03-23T18:09:23.147+0700 I CONTROL  [initandlisten] git version: caa42a1f75a56c7643d0b68d3880444375ec42e3
+2019-03-23T18:09:23.147+0700 I CONTROL  [initandlisten] allocator: tcmalloc
+2019-03-23T18:09:23.147+0700 I CONTROL  [initandlisten] modules: none
+2019-03-23T18:09:23.148+0700 I CONTROL  [initandlisten] build environment:
+2019-03-23T18:09:23.148+0700 I CONTROL  [initandlisten]     distmod: 2008plus-ssl
+2019-03-23T18:09:23.148+0700 I CONTROL  [initandlisten]     distarch: x86_64
+2019-03-23T18:09:23.148+0700 I CONTROL  [initandlisten]     target_arch: x86_64
+2019-03-23T18:09:23.148+0700 I CONTROL  [initandlisten] options: { config: "E:\mongoDb\config.txt", storage: { dbPath: "E:\mongoDb\data" }, systemLog: { destination: "file", path: "E:\mongoDb\log\mongo.log" } }
+2019-03-23T18:09:23.154+0700 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3536M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2019-03-23T18:09:23.433+0700 I STORAGE  [initandlisten] WiredTiger message [1553339363:432572][10828:140720140849280], txn-recover: Set global recovery timestamp: 0
+2019-03-23T18:09:23.557+0700 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] 
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] 
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2019-03-23T18:09:23.897+0700 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2019-03-23T18:09:23.898+0700 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2019-03-23T18:09:23.898+0700 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2019-03-23T18:09:23.898+0700 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2019-03-23T18:09:23.898+0700 I CONTROL  [initandlisten] 
+2019-03-23T18:09:23.909+0700 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: a9e37f53-6eea-4e48-848b-86241b06f0e6
+2019-03-23T18:09:24.050+0700 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 4.0
+2019-03-23T18:09:24.084+0700 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 11f04a50-b05e-47a4-9fc3-c2735eb69c56
+2019-03-23T18:09:24.609+0700 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory 'E:/mongoDb/data/diagnostic.data'
+2019-03-23T18:09:24.616+0700 I NETWORK  [initandlisten] waiting for connections on port 27017
+2019-03-23T18:09:24.620+0700 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 531024c6-f47c-4f5b-8010-2bdf91e405bb
+2019-03-23T18:09:24.781+0700 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2019-03-23T18:09:24.781+0700 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2019-03-23T18:09:24.808+0700 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2019-03-23T18:09:24.809+0700 I COMMAND  [LogicalSessionCacheRefresh] command config.$cmd command: createIndexes { createIndexes: "system.sessions", indexes: [ { key: { lastUse: 1 }, name: "lsidTTLIndex", expireAfterSeconds: 1800 } ], $db: "config" } numYields:0 reslen:114 locks:{ Global: { acquireCount: { r: 2, w: 2 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } protocol:op_msg 188ms
+2019-03-23T18:10:30.600+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:64669 #1 (1 connection now open)
+2019-03-23T18:10:30.604+0700 I NETWORK  [conn1] received client metadata from 127.0.0.1:64669 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "4.0.6" }, os: { type: "Windows", name: "Microsoft Windows 8.1", architecture: "x86_64", version: "6.3 (build 9600)" } }
+2019-03-23T22:28:19.619+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56857 #2 (2 connections now open)
+2019-03-23T22:28:19.640+0700 I NETWORK  [conn2] received client metadata from 127.0.0.1:56857 conn2: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:28:19.749+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56858 #3 (3 connections now open)
+2019-03-23T22:28:19.750+0700 I NETWORK  [conn3] received client metadata from 127.0.0.1:56858 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:28:23.349+0700 I NETWORK  [conn3] end connection 127.0.0.1:56858 (2 connections now open)
+2019-03-23T22:28:23.349+0700 I NETWORK  [conn2] end connection 127.0.0.1:56857 (1 connection now open)
+2019-03-23T22:29:03.395+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56921 #4 (2 connections now open)
+2019-03-23T22:29:03.396+0700 I NETWORK  [conn4] received client metadata from 127.0.0.1:56921 conn4: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:29:03.447+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56922 #5 (3 connections now open)
+2019-03-23T22:29:03.448+0700 I NETWORK  [conn5] received client metadata from 127.0.0.1:56922 conn5: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:29:13.572+0700 I NETWORK  [conn4] end connection 127.0.0.1:56921 (2 connections now open)
+2019-03-23T22:29:13.573+0700 I NETWORK  [conn5] end connection 127.0.0.1:56922 (1 connection now open)
+2019-03-23T22:29:18.298+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56945 #6 (2 connections now open)
+2019-03-23T22:29:18.299+0700 I NETWORK  [conn6] received client metadata from 127.0.0.1:56945 conn6: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:29:18.351+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56946 #7 (3 connections now open)
+2019-03-23T22:29:18.352+0700 I NETWORK  [conn7] received client metadata from 127.0.0.1:56946 conn7: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:29:37.140+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56972 #8 (4 connections now open)
+2019-03-23T22:29:37.141+0700 I NETWORK  [conn8] received client metadata from 127.0.0.1:56972 conn8: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:29:37.189+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:56973 #9 (5 connections now open)
+2019-03-23T22:29:37.190+0700 I NETWORK  [conn9] received client metadata from 127.0.0.1:56973 conn9: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:29:45.196+0700 I NETWORK  [conn6] end connection 127.0.0.1:56945 (4 connections now open)
+2019-03-23T22:29:45.197+0700 I NETWORK  [conn7] end connection 127.0.0.1:56946 (3 connections now open)
+2019-03-23T22:30:05.208+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:57025 #10 (4 connections now open)
+2019-03-23T22:30:05.208+0700 I NETWORK  [conn10] received client metadata from 127.0.0.1:57025 conn10: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:30:05.257+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:57026 #11 (5 connections now open)
+2019-03-23T22:30:05.257+0700 I NETWORK  [conn11] received client metadata from 127.0.0.1:57026 conn11: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:30:39.803+0700 I STORAGE  [conn10] createCollection: FirstDb.temp with generated UUID: c48d7591-cf1a-416b-9413-fff1c87c0d64
+2019-03-23T22:30:39.956+0700 I COMMAND  [conn10] insert FirstDb.temp appName: "robo3t" ninserted:1 keysInserted:1 numYields:0 locks:{ Global: { acquireCount: { r: 3, w: 3 } }, Database: { acquireCount: { w: 2, W: 1 } }, Collection: { acquireCount: { w: 2 } } } 158ms
+2019-03-23T22:30:39.959+0700 I COMMAND  [conn10] CMD: drop FirstDb.temp
+2019-03-23T22:30:39.961+0700 I STORAGE  [conn10] Finishing collection drop for FirstDb.temp (c48d7591-cf1a-416b-9413-fff1c87c0d64).
+2019-03-23T22:31:36.611+0700 I STORAGE  [conn10] createCollection: FirstDb.User with generated UUID: ef2537df-b107-45a5-ae6e-04bcb817f805
+2019-03-23T22:33:16.058+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:57301 #12 (6 connections now open)
+2019-03-23T22:33:16.066+0700 I NETWORK  [conn12] received client metadata from 127.0.0.1:57301 conn12: { application: { name: "robo3t" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-23T22:33:16.120+0700 I NETWORK  [listener] connection accepted from 127.0.0.1:57302 #13 (7 connections now open)
+2019-03-23T22:33:16.121+0700 I NETWORK  [conn13] received client metadata from 127.0.0.1:57302 conn13: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.4.3-10-g865d2fb" }, os: { type: "Windows", name: "Microsoft Windows 8", architecture: "x86_64", version: "6.2 (build 9200)" } }
+2019-03-24T10:17:58.263+0700 I NETWORK  [conn1] end connection 127.0.0.1:64669 (6 connections now open)
+2019-03-24T10:18:01.261+0700 I CONTROL  [thread14] CTRL_CLOSE_EVENT signal
+2019-03-24T10:18:01.261+0700 I CONTROL  [consoleTerminate] got CTRL_CLOSE_EVENT, will terminate after current cmd ends
+2019-03-24T10:18:01.263+0700 I NETWORK  [consoleTerminate] shutdown: going to close listening sockets...
+2019-03-24T10:18:01.271+0700 I CONTROL  [consoleTerminate] Shutting down free monitoring
+2019-03-24T10:18:01.272+0700 I FTDC     [consoleTerminate] Shutting down full-time diagnostic data capture
+2019-03-24T10:18:01.346+0700 I STORAGE  [consoleTerminate] WiredTigerKVEngine shutting down
+2019-03-24T10:18:01.346+0700 I STORAGE  [consoleTerminate] Shutting down session sweeper thread
+2019-03-24T10:18:01.346+0700 I STORAGE  [consoleTerminate] Finished shutting down session sweeper thread
+2019-03-24T10:18:01.880+0700 I STORAGE  [consoleTerminate] shutdown: removing fs lock...
+2019-03-24T10:18:01.880+0700 I CONTROL  [consoleTerminate] now exiting
+2019-03-24T10:18:01.881+0700 I CONTROL  [consoleTerminate] shutting down with code:12
